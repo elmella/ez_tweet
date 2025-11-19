@@ -1,0 +1,12 @@
+[project]
+name = "ez_tweet"
+version = "0.1.0"
+description = "Simple local tweet composer using tweepy and Tkinter."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "tweepy>=4.14.0",
+]
+
+[tool.uv]
+exclude-newer = "2024-01-01"

@@ -4,11 +4,17 @@ Post tweets from your account without needing to open the site.
 
 ## Installation
 
-1. Create and activate a virtual environment (recommended).
-2. Install dependencies:
+1. Install [uv](https://github.com/astral-sh/uv) (one-time):
 
    ```bash
-   pip install -r requirements.txt
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Create a virtual environment and install dependencies with uv (from the
+   project root):
+
+   ```bash
+   uv sync
    ```
 
 ## Configuration
@@ -50,7 +56,7 @@ Launch the simple local window, type your post in the text box, and click
 **Post**. A character counter helps stay within the default 280-character limit.
 
 ```bash
-python cli.py --config ~/.config/ez_tweet.env
+uv run cli.py --config ~/.config/ez_tweet.env
 ```
 
 Key options:
